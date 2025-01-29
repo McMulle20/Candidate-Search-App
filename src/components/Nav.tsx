@@ -1,15 +1,32 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Nav = () => {
-  // TODO: Add necessary code to display the navigation bar and link between the pages
+  const currentPage = useLocation().pathname;
+
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Candidate Search</Link>
+    <nav className="nav">
+      <div className="nav-logo-container">
+        <Link to="/" id="logo" className="nav-link">
+          <img src="path/to/your/image.png" alt="Candidate Search Logo" className="nav-logo" />
+          <span>Candidate Search</span>
+        </Link>
+      </div>
+      <ul className="nav">
+        <li className="nav-item">
+          <Link
+            to="/"
+            className={`nav-link ${currentPage === '/' ? 'active' : ''}`}
+          >
+            HOME
+          </Link>
         </li>
-        <li>
-          <Link to="/saved">Saved Candidates</Link>
+        <li className="nav-item">
+          <Link
+            to="/saved"
+            className={`nav-link ${currentPage === '/saved' ? 'active' : ''}`}
+          >
+            POTENTIAL CANDIDATES
+          </Link>
         </li>
       </ul>
     </nav>
