@@ -1,37 +1,62 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Candidate-Search-App-Mod13
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This project allows employers to search for potential candidates using the GitHub API. The application retrieves candidate information from GitHub, allowing users to view candidate details and save potential candidates to a list. Users can also reject candidates and view a list of saved candidates. The application is built with TypeScript and deployed to Render.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+Steps to install and set up your project:
+1. Clone the repository: git clone [link](https://github.com/McMulle20/Candidate-Search-App-Mod13-).
+   
+2. Navigate to the project directory: cd CandidateSearch
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. Install dependencies: npm install
 
-* Configure the top-level `parserOptions` property as follows:
+4. Set up GitHub Personal Access Token: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+5. Add the token to the .env file in the project root
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+6. Build and run the project: npm run build && npm run dev
+
+## Usage
+
+Once the application is set up and running, you can search for candidates, which will load their details (name, username, location, avatar, email, GitHub URL, company) from GitHub. 
+
+Clicking the "+" button will save the candidate to your list of potential candidates and move on to the next one. Whereas, clicking the "-" button will skip the current candidate and move to the next without saving. 
+
+On the Saved Candidates page, you'll see a list of previously saved candidates. If no candidates have been saved yet, an appropriate message will be displayed. The list of saved candidates will persist across page reloads using local storage. If there are no more candidates available, the application will show a message indicating no candidates are left.
+
+## Credits
+
+BootCamp Guide and the links provided: 
+Xpert Learning Assistant
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
+https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28#authenticating-with-a-personal-access-token
+https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide
+https://docs.render.com/configure-environment-variables
+https://docs.github.com/en/rest/users/users
+## License
+
+This project is licensed under the MIT License.
 
 ---
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-=======
-# Candidate-Search-App-Mod13-
->>>>>>> 4837b78c13feff06a95b0ee4fb906395de714d26
+## How to Contribute
+
+Follow these steps to contribute to the project:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-name).
+Commit your changes (git commit -am 'Add new feature').
+Push the branch to your fork (git push origin feature-name).
+Submit a pull request. For detailed guidelines on contributing, you can refer to the Contributor Covenant.
+
+## Tests
+
+Render: 
+https://candidate-search-app-mod13.onrender.com
