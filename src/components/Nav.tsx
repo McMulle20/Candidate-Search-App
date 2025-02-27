@@ -5,13 +5,7 @@ const Nav = () => {
 
   return (
     <nav className="nav">
-      <div className="nav-logo-container">
-        <Link to="/" id="logo" className="nav-link">
-          <img src="path/to/your/image.png" alt="Candidate Search Logo" className="nav-logo" />
-          <span>Candidate Search</span>
-        </Link>
-      </div>
-      <ul className="nav">
+      <ul className="nav-menu"> {/* Changed class from "nav" to "nav-menu" */}
         <li className="nav-item">
           <Link
             to="/"
@@ -23,7 +17,7 @@ const Nav = () => {
         <li className="nav-item">
           <Link
             to="/saved"
-            className={`nav-link ${currentPage === '/saved' ? 'active' : ''}`}
+            className={`nav-link ${currentPage === '/SavedCandidates' ? 'active' : ''}`}
           >
             POTENTIAL CANDIDATES
           </Link>
@@ -32,5 +26,5 @@ const Nav = () => {
     </nav>
   );
 };
-//thjis is a comment to tst
+
 export default Nav;

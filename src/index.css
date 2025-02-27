@@ -118,3 +118,226 @@ tbody tr:nth-child(odd) {
   width: 80vw;
   table-layout: fixed;
 }
+.candidate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.candidate-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+
+}
+
+.candidate-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+a {
+  color: #4fa3d1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 250px;
+}
+
+/* Styling for buttons */
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus {
+  background-color: green;
+  color: white;
+}
+
+.plus:hover {
+  background-color: darkgreen;
+  transform: scale(1.1);
+}
+
+.minus {
+  background-color: red;
+  color: white;
+}
+
+.minus:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
+.potential-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.candidate-list {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 800px;
+}
+
+.candidate-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.candidate-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #4fa3d1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  justify-content: flex-start; /* Aligns items to the left */
+  align-items: center;
+  display: flex;
+  padding: 15px 30px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-menu {
+  display: flex;  /* Ensures HOME & POTENTIAL CANDIDATES are in one row */
+  list-style: none;
+  gap: 20px;  /* Adds spacing */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  
+  font-size: 18px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid white;
+}
+
+.candidate-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: black;
+  color: white;
+  text-align: left;
+}
+
+.candidate-table th,
+.candidate-table td {
+  border: 2px solid #222;
+  padding: 10px;
+}
+
+.candidate-table th {
+  background: black;
+  font-weight: bold;
+}
+
+.candidate-table tr:nth-child(even) {
+  background: #333;
+}
+
+.candidate-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.candidate-email {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.reject-button {
+  background: red;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.reject-button:hover {
+  background: darkred;
+}
